@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Lab Storage</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/c10ca446cc.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <section id="title">
+
+    <div class="container-fluid">
+
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <a class="navbar-brand" href="index.html">Lab Storage</a>
+
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="viewinfo.html">Photos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="addinfo.html">Storage</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="logout.html">Log-out</a>
+            </li>
+        </ul>
+     </div>
+
+    </nav>
+
+
+    <!-- Title -->
+
+    <div class="row">
+
+      <div class="col-lg-6">
+      <h3>Please Log in or Create Account.</h3>
+
+        <form class="form-user" action="index.html" method="post">
+
+        <div class="form-box error" data-errormsg="">
+            <label for="input-first">Username</label>
+            <input type="text" id="input-first" autofocus placeholder="Username" tabindex="1"/>
+        </div>
+        <div class="form-box" data-errormsg="">
+            <label for="input-password">Password</label>
+            <input type="password" id="input-password" required placeholder="Password" tabindex="2" />
+        </div>
+        <div class="form-box" data-errormsg="">
+            <label for="input-email">E-mail</label>
+            <input type="email" id="input-email" required placeholder="E-mail Address" tabindex="3" />
+        </div>
+        </form>
+
+      <button type="button" class="btn btn-dark btn-lg download-button">Log In</button>
+      <button type="button" class="btn btn-outline-light btn-lg download-button">Sign Up</button>
+      </div>
+
+      <div class="col-lg-6">
+        <img class="title-image"src="images/lab01.jpeg" alt="lab image-01">
+      </div>
+
+    </div>
+  </div>
+  </section>
+
+<section id="footer">
+
+  <footer id="footer">
+
+      <h5>© Copyright 2022 SIU Pathology Lab Storage</h5>
+
+  </footer>
+
+</section>
+
+</body>
